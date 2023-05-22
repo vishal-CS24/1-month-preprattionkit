@@ -1,9 +1,17 @@
 def timeConversion(s):
+    li=s.split(':')
     if s[-2:] == "PM":
-        li=s.split(':')
-        li[0]=str(int(li[0])+12)
+        if li[0]=='12':
+            li[0]='12'
+        else:
+            li[0]=str(int(li[0])+12)
         s=":".join(li)
-        print(s[:-2])
+        return s[:-2]
     else:
-        print(s[:-2])
+        if li[0]=='12':
+            li[0]='00'
+            s=":".join(li)
+            return s[:-2]
+        else:
+            return s[:-2]
 timeConversion("07:05:45AM")
