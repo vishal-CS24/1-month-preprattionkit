@@ -31,7 +31,7 @@ int main()
     string s1,s2;
     cin>>s1>>s2;
     if (is_anagram(s1,s2)){
-        cout << "strings are anagram";
+        cout << "strings you entered are anagram";
     }
     else 
     {
