@@ -1,0 +1,19 @@
+n = int(input())
+n1 = n/2
+n2 = (n+1)/2
+i = 1
+while i <= n2:
+    space = 1
+    while space <= n2-i:
+        print(' ', end="")
+        space = space+1
+    j = 1
+    while j <= i:
+        print('*', end="")
+        j = j+1
+    p = i-1
+    while p >= 1:
+        print('*', end="")
+        p = p-1
+    print()
+    i = i+1
