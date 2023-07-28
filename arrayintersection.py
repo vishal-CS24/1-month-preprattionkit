@@ -110,12 +110,7 @@ arr1 = [7, 1, 5, 2, 3, 6]
 arr2 = [3, 8, 6, 20, 7]
 n1 = len(arr1)
 n2 = len(arr2)
-printIntersection(arr1, arr2, n1,n2)
-
-
-
-
-
+printIntersection(arr1, arr2, n1,n
 
 
 def arrayIntersection(a, b):
